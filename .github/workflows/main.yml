@@ -32,7 +32,11 @@ jobs:
           npm run build
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:  # 自定义环境变量
+          ACCESS_TOKEN: ${{ secrets.LERNING_SECRET }} # secret 名称
+          BRANCH: main
+          FOLDER: dist
+          REPOSITORY_NAME: learning/luckyli.github.io # github page 仓库
+          TARGET_FOLDER: ./ # 打包的文件将放到静态服务器 github-actions-demo 目录下
