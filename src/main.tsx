@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { HashRouter, Route, Link } from 'react-router-dom'
 import './index.scss'
 import Home from './pages/Home'
 import List from './pages/List'
@@ -22,11 +22,11 @@ const Navigation = () => {
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Navigation />
       <Route path='/' exact component={Home} />
       <Route path='/list' component={List} />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 )
