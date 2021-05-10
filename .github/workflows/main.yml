@@ -38,5 +38,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.LERNING_SECRET }} # secret 名称
           BRANCH: main
           FOLDER: dist
-          REPOSITORY_NAME: learning/luckyli.github.io # github page 仓库
+          REPOSITORY_NAME: luckyli/learning # github page 仓库
           TARGET_FOLDER: ./ # 打包的文件将放到静态服务器 github-actions-demo 目录下
