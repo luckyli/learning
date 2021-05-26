@@ -9,12 +9,17 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "@babel/preset-react": "^7.13.13",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
     "@types/jest": "^26.0.23",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -33,5 +38,10 @@
   },
   "jest": {
     "verbose": true
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
   }
 }
