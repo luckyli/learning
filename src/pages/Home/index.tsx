@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './index.scss'
+import Modal from '../../common/components/Modal'
 
 function Home () {
   const [count, setCount] = useState(0)
+  const [isModal, setModal] = useState(false)
 
   return (
     <div className='home page'>
@@ -18,6 +20,15 @@ function Home () {
       <div className='box'>
         <span>react</span> use <span className='code'>vite</span>
       </div>
+
+      <button onClick={() => setModal(true)}>Click Here</button>
+      <Modal
+        isVisible={isModal}
+        title='Modal Title'
+        content={<p>Add your content here</p>}
+        footer={<button onClick={() => setModal(false)}>Cancel</button>}
+        onClose={() => setModal(false)}
+      />
     </div>
   )
 }
