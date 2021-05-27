@@ -27,6 +27,7 @@ function Home () {
         isVisible={isModal}
         title='Modal Title'
         content={<p>Add your content here</p>}
+        footer={null}
         // footer={<button onClick={() => setModal(false)}>Cancel</button>}
         onClose={() => setModal(false)}
       />
