@@ -22,8 +22,8 @@ const Modal = ({ isVisible = false, title, content, footer, onClose }) => {
         <div className='modal-header'>
           <h3 className='modal-title'>{title}</h3>
           <span className='modal-close' onClick={onClose}>
-              &times;
-            </span>
+            关闭
+          </span>
         </div>
         <div className='modal-body'>
           <div className='modal-content'>{content}</div>
