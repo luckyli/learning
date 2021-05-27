@@ -3,12 +3,16 @@
   margin: 20px;
   padding: 20px;
 
-  span {
+  .color-red {
     font-weight: bold;
     color: rgb(238, 110, 132);
   }
 
-  .code {
+  .color-green {
     color: rgb(26, 170, 115);
+  }
+
+  .box {
+    margin-bottom: 20px;
   }
 }

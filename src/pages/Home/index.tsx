@@ -18,15 +18,16 @@ function Home () {
       </header>
 
       <div className='box'>
-        <span>react</span> use <span className='code'>vite</span>
+        <span className='color-red'>react</span> use <span className='color-green'>vite</span>
       </div>
-
-      <button onClick={() => setModal(true)}>Click Here</button>
+      <div className='box'>
+        <button onClick={() => setModal(true)}>打开底部弹窗</button>
+      </div>
       <Modal
         isVisible={isModal}
         title='Modal Title'
         content={<p>Add your content here</p>}
-        footer={<button onClick={() => setModal(false)}>Cancel</button>}
+        // footer={<button onClick={() => setModal(false)}>Cancel</button>}
         onClose={() => setModal(false)}
       />
     </div>
